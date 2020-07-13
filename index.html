@@ -2,31 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T02</title>
+    <title>T03</title>
   </head>
   <body>
     <form  name="signup">
       <label for="username">Username: </label>
       <input type="text" id="username" name="username" value="" required><br>
       <label for="country">Country:</label>
-      <select id="country" name="country" size="6">
-        <option value="Belgium">Belgium</option>
-        <option value="Croatia">Croatia</option>
-        <option value="Greece">Greece</option>
-        <option value="Italy">Italy</option>
-        <option value="Latvia">Latvia</option>
-        <option value="Other">Other</option>
-      </select><br>
-      <input list="browsers">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
+      <input list="country">
+        <datalist id="countries">
+          <option value="Belgium">
+          <option value="Croatia">
+          <option value="Greece">
+          <option value="Italy">
+          <option value="Latvia">
+          <option value="Other">
+        </datalist><br>
       <label for="pin">4-digit PIN:</label>
-      <input type="password" id="pin" name="pin" value="" required><br>
+      <input type="password" id="pin" name="pin" value=""><br>
       <label for="checkpin">Repeat PIN:</label>
       <input type="password" id="checkpin" name="checkpin" value=""><br>
       <input type="submit" value="Submit">
