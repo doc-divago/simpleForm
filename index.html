@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T046</title>
+    <title>T047</title>
   </head>
   <body>
     <form  name="signup">
@@ -30,7 +30,7 @@
       function validateForm() {
         const username = document.signup.username.value;
         alert("Validating " + username);
-        localStorage.setItem("username", eval(username));
+        localStorage.setItem("username", username);
         document.getElementById("demo2").innerHTML = localStorage.getItem("username");
         /*const country = document.signup.country.value;*/
         console.log("Before if " + username);
