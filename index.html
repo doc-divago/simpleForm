@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T048</title>
+    <title>T049</title>
   </head>
   <body>
     <form  name="signup">
@@ -42,6 +42,7 @@
         console.log("After if " + username);
         localStorage.setItem("username", "Jack");
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
+        return username;
       }
       localStorage.setItem("username", username);
       document.getElementById("demo2").innerHTML = localStorage.getItem("username");
