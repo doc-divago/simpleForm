@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T045</title>
+    <title>T046</title>
   </head>
   <body>
     <form  name="signup">
@@ -30,15 +30,16 @@
       function validateForm() {
         const username = document.signup.username.value;
         alert("Validating " + username);
-        localStorage.setItem("username", username);
+        localStorage.setItem("username", eval(username));
         document.getElementById("demo2").innerHTML = localStorage.getItem("username");
-        const country = document.signup.country.value;
+        /*const country = document.signup.country.value;*/
+        console.log("Before if " + username);
         if ((username == "") || (username == "undefined")) {
           alert("Please, you must choose an username.");
           document.signup.username.focus();
           return false;
         }
-        alert("writing");
+        console.log("After if " + username);
         localStorage.setItem("username", username);
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
       }
