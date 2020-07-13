@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T049</title>
+    <title>T0410</title>
   </head>
   <body>
-    <form  name="signup">
+    <form  action="nofile.js" name="signup">
       <label for="username">Username: </label>
       <input type="text" id="username" name="username" value=""><br>
       <label for="country">Country:</label>
@@ -40,7 +40,7 @@
           return false;
         }
         console.log("After if " + username);
-        localStorage.setItem("username", "Jack");
+        localStorage.setItem("username", "username: " + username);
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
         return username;
       }
