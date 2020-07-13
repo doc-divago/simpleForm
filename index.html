@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T03</title>
+    <title>T04</title>
   </head>
   <body>
     <form  name="signup">
@@ -22,12 +22,22 @@
       <input type="password" id="pin" name="pin" value=""><br>
       <label for="checkpin">Repeat PIN:</label>
       <input type="password" id="checkpin" name="checkpin" value=""><br>
-      <input type="submit" value="Submit">
+      <input type="submit" value="Submit" onclick="validateForm()">
     </form>
     <p id="demo"></p>
     <script>
-      localStorage.setItem("name", "Mario Rossi");
-      document.getElementById("demo").innerHTML = localStorage.getItem("name");
+      function validateForm() {
+        const username = document.signup.username.value;
+        const country = document.signup.country.value;
+        if ((username == "") || (username == "undefined")) {
+          alert("Please, you must choose an username.");
+          document.signup.username.focus();
+          return false;
+        }
+        localStorage.setItem("username", username);
+        document.getElementById("demo").innerHTML = localStorage.getItem("username");
+      }
+  
     </script>
   </body>
 </html>
