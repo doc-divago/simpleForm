@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T042</title>
+    <title>T043</title>
   </head>
   <body>
     <form  name="signup">
@@ -29,6 +29,7 @@
     <script>
       function validateForm() {
         var username = document.signup.username.value;
+        alert("Validating" + username);
         var country = document.signup.country.value;
         if ((username == "") || (username == "undefined")) {
           alert("Please, you must choose an username.");
@@ -36,10 +37,10 @@
           return false;
         }
         alert("writing");
-        localStorage.setItem("username", "{#username}");
+        localStorage.setItem("username", username);
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
       }
-      localStorage.setItem("username", "{#username}");
+      localStorage.setItem("username", username);
       document.getElementById("demo2").innerHTML = localStorage.getItem("username");
     </script>
   </body>
