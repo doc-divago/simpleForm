@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T0410</title>
+    <title>T0411</title>
   </head>
   <body>
-    <form  action="nofile.js" name="signup">
+    <form  action="noaction.js" name="signup">
       <label for="username">Username: </label>
       <input type="text" id="username" name="username" value=""><br>
       <label for="country">Country:</label>
@@ -42,10 +42,10 @@
         console.log("After if " + username);
         localStorage.setItem("username", "username: " + username);
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
-        return username;
+        localStorage.setItem("username2", username);
+        return
       }
-      localStorage.setItem("username", username);
-      document.getElementById("demo2").innerHTML = localStorage.getItem("username");
+      document.getElementById("demo2").innerHTML = localStorage.getItem("username2");
     </script>
   </body>
 </html>
