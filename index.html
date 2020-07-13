@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T04</title>
+    <title>T041</title>
   </head>
   <body>
     <form  name="signup">
@@ -10,7 +10,7 @@
       <input type="text" id="username" name="username" value="" required><br>
       <label for="country">Country:</label>
       <input list="country">
-        <datalist id="countries">
+        <datalist id="country">
           <option value="Belgium">
           <option value="Croatia">
           <option value="Greece">
@@ -25,6 +25,7 @@
       <input type="submit" value="Submit" onclick="validateForm()">
     </form>
     <p id="demo"></p>
+    <p id="demo2"></p>
     <script>
       function validateForm() {
         const username = document.signup.username.value;
@@ -34,10 +35,11 @@
           document.signup.username.focus();
           return false;
         }
-        localStorage.setItem("username", username);
+        alert("writing");
+        localStorage.setItem("username", {#username});
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
       }
-  
+
     </script>
   </body>
 </html>
