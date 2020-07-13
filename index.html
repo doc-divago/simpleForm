@@ -2,14 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T01</title>
+    <title>T02</title>
   </head>
   <body>
     <form>
-      <label for="username">Username:</label>
+      <label for="username">Username: </label>
+      <input type="text" id="username" name="username" value=""><br>
       <label for="country">Country:</label>
+      <select id="country" name="country" size="6">
+        <option value="Belgium">Belgium</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Greece">Greece</option>
+        <option value="Italy">Italy</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Other">Other</option>
+      </select><br>
       <label for="pin">4-digit PIN:</label>
+      <input type="password" id="pin" name="pin" value=""><br>
       <label for="checkpin">Repeat PIN:</label>
+      <input type="password" id="checkpin" name="checkpin" value=""><br>
     </form>
     <p id="demo"></p>
     <script>
