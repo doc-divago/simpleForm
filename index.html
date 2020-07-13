@@ -5,9 +5,9 @@
     <title>T02</title>
   </head>
   <body>
-    <form>
+    <form  name="signup">
       <label for="username">Username: </label>
-      <input type="text" id="username" name="username" value=""><br>
+      <input type="text" id="username" name="username" value="" required><br>
       <label for="country">Country:</label>
       <select id="country" name="country" size="6">
         <option value="Belgium">Belgium</option>
@@ -17,8 +17,16 @@
         <option value="Latvia">Latvia</option>
         <option value="Other">Other</option>
       </select><br>
+      <input list="browsers">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
       <label for="pin">4-digit PIN:</label>
-      <input type="password" id="pin" name="pin" value=""><br>
+      <input type="password" id="pin" name="pin" value="" required><br>
       <label for="checkpin">Repeat PIN:</label>
       <input type="password" id="checkpin" name="checkpin" value=""><br>
       <input type="submit" value="Submit">
