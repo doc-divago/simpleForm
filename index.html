@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>T041</title>
+    <title>T042</title>
   </head>
   <body>
     <form  name="signup">
@@ -28,18 +28,19 @@
     <p id="demo2"></p>
     <script>
       function validateForm() {
-        const username = document.signup.username.value;
-        const country = document.signup.country.value;
+        var username = document.signup.username.value;
+        var country = document.signup.country.value;
         if ((username == "") || (username == "undefined")) {
           alert("Please, you must choose an username.");
           document.signup.username.focus();
           return false;
         }
         alert("writing");
-        localStorage.setItem("username", {#username});
+        localStorage.setItem("username", "{#username}");
         document.getElementById("demo").innerHTML = localStorage.getItem("username");
       }
-
+      localStorage.setItem("username", "{#username}");
+      document.getElementById("demo2").innerHTML = localStorage.getItem("username");
     </script>
   </body>
 </html>
