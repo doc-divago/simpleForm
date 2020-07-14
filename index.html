@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
-    <title>T0429</title>
+    <title>T0430</title>
     <style>
       body {
         color:#404040;
@@ -24,14 +24,14 @@
         width:33%;
       }
       input[type="text"]{
-        width:300px;
+        width:100%;
         margin-top:5px;
         margin-bottom:10px;
         padding:10px;
         border:1px solid #003399
       }
       input[type="password"]{
-        width:100px;
+        width:120px;
         margin-top:1px;
         margin-bottom:15px;
         padding:10px;
@@ -39,7 +39,7 @@
       }
       input[type="submit"]{
         margin:auto;
-        width:33%;
+        width:120px;
         padding:10px 45px;
         background-color:#003399;
         border:none;
@@ -73,7 +73,7 @@
     <div id="login">
       <form  action="map.html" name="signup">
         <label for="username">Username: </label><br>
-        <input type="text" id="username" name="username" value="" placeholder="Ex. Andrea99, John Smith, TheBest"><br>
+        <input type="text" id="username" name="username" value="" placeholder="Ex. Andrea99, John Smith, TheBest..."><br>
         <label for="country">Country:</label><br>
         <!-- <input list="countries" name="country">
           <datalist id="countries">
@@ -93,7 +93,7 @@
           <option value="Other">Other</option>
         </select><br>
         <label for="pin">4-digit PIN:</label><br>
-        <input type="password" id="pin" name="pin" value="" placerholder="Ex: 1234"><br>
+        <input type="password" id="pin" name="pin" value=""><br>
         <label for="checkpin">Repeat PIN:</label><br>
         <input type="password" id="checkpin" name="checkpin" value=""><br>
         <input type="submit" value="Submit" onclick="validateForm()">
