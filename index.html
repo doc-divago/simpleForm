@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
-    <title>T0421</title>
+    <title>T0422</title>
     <style>
       body {
         color:#404040;
@@ -18,19 +18,23 @@
         -moz-box-sizing:border-box;
         box-sizing:border-box;
       }
+
+      div  .form {
+        margin:auto;
+      }
       input[type="text"]{
-        width:100px;
+        width:300px;
         margin-top:5px;
         margin-bottom:10px;
         padding:10px;
-        border:3px solid #003399
+        border:1px solid #003399
       }
       input[type="password"]{
         width:100px;
         margin-top:1px;
         margin-bottom:15px;
         padding:10px;
-        border:3px solid #003399
+        border:1px solid #003399
       }
       input[type="submit"]{
         width:100px;
@@ -50,25 +54,27 @@
     </style>
   </head>
   <body>
-    <form  action="map.html" name="signup">
-      <label for="username">Username: </label>
-      <input type="text" id="username" name="username" value=""><br>
-      <label for="country">Country:</label>
-      <input list="countries" name="country">
-        <datalist id="countries">
-          <option value="Belgium">
-          <option value="Croatia">
-          <option value="Greece">
-          <option value="Italy">
-          <option value="Latvia">
-          <option value="Other">
-        </datalist><br>
-      <label for="pin">4-digit PIN:</label>
-      <input type="password" id="pin" name="pin" value=""><br>
-      <label for="checkpin">Repeat PIN:</label>
-      <input type="password" id="checkpin" name="checkpin" value=""><br>
-      <input type="submit" value="Submit" onclick="validateForm()">
-    </form>
+    <div class="form">
+      <form  action="map.html" name="signup">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" value=""><br>
+        <label for="country">Country:</label>
+        <input list="countries" name="country">
+          <datalist id="countries">
+            <option value="Belgium">
+            <option value="Croatia">
+            <option value="Greece">
+            <option value="Italy">
+            <option value="Latvia">
+            <option value="Other">
+          </datalist><br>
+        <label for="pin">4-digit PIN:</label>
+        <input type="password" id="pin" name="pin" value=""><br>
+        <label for="checkpin">Repeat PIN:</label>
+        <input type="password" id="checkpin" name="checkpin" value=""><br>
+        <input type="submit" value="Submit" onclick="validateForm()">
+      </form>
+    </div>
     <p id="demo"></p>
     <p id="demo2"></p>
     <script>
