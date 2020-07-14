@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
-    <title>T0426</title>
+    <title>T0427</title>
     <style>
       body {
         color:#404040;
@@ -52,7 +52,7 @@
         background-color:#003366;
         color:#fff;
       }
-      input[type="list"] {
+      select {
         width:100px;
         margin-top:1px;
         margin-bottom:15px;
@@ -74,7 +74,7 @@
         <label for="username">Username: </label><br>
         <input type="text" id="username" name="username" value=""><br>
         <label for="country">Country:</label><br>
-        <input list="countries" name="country">
+        <!-- <input list="countries" name="country">
           <datalist id="countries">
             <option value="Belgium">
             <option value="Croatia">
@@ -82,7 +82,15 @@
             <option value="Italy">
             <option value="Latvia">
             <option value="Other">
-          </datalist><br>
+          </datalist><br> -->
+        <select name="country">
+          <option value="Belgium">
+          <option value="Croatia">
+          <option value="Greece">
+          <option value="Italy">
+          <option value="Latvia">
+          <option value="Other">
+        </select>
         <label for="pin">4-digit PIN:</label><br>
         <input type="password" id="pin" name="pin" value=""><br>
         <label for="checkpin">Repeat PIN:</label><br>
